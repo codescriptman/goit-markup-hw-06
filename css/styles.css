@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: 1px solid green !important;
-}
+} */
 
 body {
   margin: 0;
@@ -860,37 +860,122 @@ input {
   /* section 3 Team=> */
   .team-list {
     flex-wrap: wrap;
+    gap: 72px;
   }
   .team-list-item {
     flex-basis: 100%;
   }
+  .section-team {
+    padding: 96px 28px;
+  }
+  .container-team {
+    padding: 0;
+  }
+  .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+  }
+  .team-photo {
+    margin: 0 auto;
+  }
+  .team-names {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .team-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
   /* section 3 Team */
   /* section 4 portfolio=>*/
+  .section-portfolio {
+    padding: 96px 16px;
+  }
+  .portfolio-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+  }
+
   .portfolio-list {
     flex-wrap: wrap;
   }
   .portfolio-list-item {
     flex-basis: 100%;
   }
+  .portfolio-mini-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .portfolio-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .portfolio-photo {
+    margin: 0 auto;
+  }
   /* section 4 portfolio */
   /* footer=> */
+  .site-footer {
+    padding: 96px 16px;
+  }
   .container-footer {
+    padding: 0;
+  }
+  .footer-logo-text {
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+  .logo-footer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-self: center;
+  }
+  .last-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .footer-contacts {
+    margin: 0 auto;
+    margin-bottom: 72px;
+  }
+  .social-media-text {
+    justify-self: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
   .subscribe {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
+  }
+  .subscribe-text {
+    justify-self: center;
   }
   .subscribe-form {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    gap: 16px;
+  }
+  .subscribe-email-textfield {
+    height: 40px;
+  }
+  .subscribe-button {
+    width: 165px;
+    height: 40px;
+    margin: 0 auto;
   }
   /* footer */
 }
