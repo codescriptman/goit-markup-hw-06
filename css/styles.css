@@ -1,6 +1,7 @@
 * {
-  outline: 4px solid green !important;
+  outline: 1px solid green !important;
 }
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -18,6 +19,7 @@ body {
 }
 img {
   display: block;
+  max-width: 100%;
 }
 
 ul,
@@ -760,13 +762,15 @@ input {
     height: 72px;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 320px) and (max-width: 768px) {
+  body {
+    font-family: "Roboto", sans-serif;
+  }
   .container {
-    width: 320px;
+    width: 100%;
     flex-wrap: wrap;
     margin: 0;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0 16px;
   }
   .container-head {
     height: 56px;
@@ -774,25 +778,54 @@ input {
   .menu-items {
     display: none;
   }
-  .contacts-list-item {
+  .contacts-list {
     display: none;
   }
   .nav {
     height: 100%;
+  }
+  .logo-header {
     padding: 16px 0;
+  }
+  .studio-header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
   }
 
   /* header */
   /* section 1 hero=> */
   .section-hero {
     height: 432px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg@2x.jpg);
+    max-width: 100%;
   }
   .container-hero {
-    margin: 0 auto;
-    display: flex;
+    height: 100%;
+    padding: 72px 52px;
+  }
+  .hero-title {
+    margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+  }
+  .button-hero {
+    width: 169px;
+    height: 56px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    margin-bottom: 0;
   }
   /* section 1 hero */
   /* section 2 about=> */
@@ -801,9 +834,27 @@ input {
   }
   .about-list {
     flex-wrap: wrap;
+    gap: 72px;
   }
   .about-list-item {
     flex-basis: 100%;
+  }
+  .about {
+    padding: 96px 0;
+  }
+
+  .about-mini-titles {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+  .about-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
   }
   /* section 2 about */
   /* section 3 Team=> */
@@ -842,48 +893,6 @@ input {
     justify-content: center;
   }
   /* footer */
-}
-@media (max-width: 320px) {
-  .container {
-    width: 100%;
-    flex-wrap: wrap;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .container-head {
-    height: 56px;
-  }
-  .nav {
-    height: 100%;
-  }
-
-  .menu-items {
-    display: none;
-  }
-  .contacts-list-item {
-    display: none;
-  }
-
-  /* header */
-  /* section 1 hero=> */
-  .section-hero {
-    height: 432px;
-  }
-  .container-hero {
-    margin: 0 auto;
-  }
-  /* section 1 hero */
-  /* section 2 about=> */
-  .about-icon-container {
-    display: none;
-  }
-  .about-list {
-    flex-wrap: wrap;
-  }
-  .about-list-item {
-    flex-basis: 100%;
-  }
-  /* section 2 about */
 }
 
 /* adaptive styles */
