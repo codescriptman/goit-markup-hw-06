@@ -774,6 +774,7 @@ input {
   }
   .container-head {
     height: 56px;
+    position: relative;
   }
   .menu-items {
     display: none;
@@ -794,6 +795,18 @@ input {
     letter-spacing: 0.03em;
     text-transform: uppercase;
   }
+  /* burger=> */
+  .burger.visually-hidden {
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    fill: #2f2f37;
+  }
+  /* burger */
 
   /* header */
   /* section 1 hero=> */
