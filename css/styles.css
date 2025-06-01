@@ -762,19 +762,238 @@ input {
 /* modal window */
 
 /* adaptive styles=> */
-@media (min-width: 768) and (max-width: 1158px) {
+@media (max-width: 1158px) {
+  .logo {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  /* header=> */
   .container {
-    width: 768px;
+    width: 100%;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0 16px;
   }
   .container-head {
     height: 72px;
+    align-items: flex-end;
   }
+
+  .logo-header {
+    margin-right: 120px;
+    padding: 0;
+    align-self: flex-start;
+  }
+  .menu-links {
+    padding-top: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transform: translateY(-16px);
+  }
+  .contact-links {
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+  }
+  /* header */
+  /* section 1 hero=> */
+  .section-hero {
+    height: 436px;
+    padding: 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg@1x.jpg);
+    max-width: 100%;
+  }
+  .container-hero {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 112px;
+    padding-bottom: 112px; */
+  }
+  .hero-title {
+    margin-bottom: 36px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07143;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+  .button-hero {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+  }
+  /* section 1 hero */
+  /* section 2 about=> */
+  .about section {
+    padding: 96px 0;
+  }
+  .about-icon-container {
+    display: none;
+  }
+  .about-list {
+    flex-wrap: wrap;
+    row-gap: 72px;
+  }
+  .about-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .about-mini-titles {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+  }
+  .about-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  /* section 2 about */
+  /* section 3 Team=> */
+  .section-team {
+    padding: 96px 0;
+  }
+  .container-team {
+    padding: 0 108px;
+  }
+  .team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+  .team-list {
+    flex-wrap: wrap;
+    row-gap: 64px;
+  }
+  .team-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .team-photo {
+    margin: 0 auto;
+  }
+  .team-card-text {
+    padding: 32px 16px;
+  }
+  .team-names {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .team-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  /* section 3 Team */
+  /* section 4 portfolio=>*/
+  .section-portfolio {
+    padding: 96px 0;
+  }
+  .portfolio-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+  }
+  .portfolio-list {
+    flex-wrap: wrap;
+    row-gap: 72px;
+  }
+  .portfolio-list-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .portfolio-mini-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+  .portfolio-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  /* section 4 portfolio */
+  /* footer=> */
+  .site-footer {
+    padding: 96px 0;
+    padding-left: 108px;
+  }
+  .container-footer {
+    padding: 0;
+  }
+  .footer-logo-text {
+    margin-bottom: 72px;
+    margin-right: 24px;
+  }
+  .last-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .social-media-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .social-list-footer {
+    gap: 18px;
+  }
+  .subscribe {
+    margin: 0;
+  }
+  .subscribe-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+  .subscribe-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+  }
+  /* footer */
+  /* modal window=> */
+  .modal {
+    transform: translate(0, 0);
+    top: 96px;
+    left: 180px;
+  }
+  /* modal window */
 }
 @media (min-width: 320px) and (max-width: 768px) {
-  body {
-    font-family: "Roboto", sans-serif;
-  }
   .container {
     width: 100%;
     flex-wrap: wrap;
