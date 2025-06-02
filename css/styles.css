@@ -845,8 +845,11 @@ input {
   }
   /* section 1 hero */
   /* section 2 about=> */
-  .about section {
-    padding: 96px 0;
+  .about {
+    padding: 0;
+  }
+  .container-about {
+    padding: 96px 16px;
   }
   .about-icon-container {
     display: none;
@@ -873,10 +876,10 @@ input {
   /* section 2 about */
   /* section 3 Team=> */
   .section-team {
-    padding: 96px 0;
+    padding: 0 108px;
   }
   .container-team {
-    padding: 0 108px;
+    padding: 96px 0;
   }
   .team-title {
     font-weight: 700;
@@ -913,7 +916,10 @@ input {
   /* section 3 Team */
   /* section 4 portfolio=>*/
   .section-portfolio {
-    padding: 96px 0;
+    padding: 0;
+  }
+  .container-portfolio {
+    padding: 96px 16px;
   }
   .portfolio-title {
     font-weight: 700;
@@ -944,11 +950,11 @@ input {
   /* section 4 portfolio */
   /* footer=> */
   .site-footer {
-    padding: 96px 0;
-    padding-left: 108px;
+    padding: 0;
   }
   .container-footer {
-    padding: 0;
+    padding: 96px 0;
+    padding-left: 108px;
   }
   .footer-logo-text {
     margin-bottom: 72px;
@@ -1193,7 +1199,10 @@ input {
     flex-basis: 100%;
   }
   .about {
-    padding: 96px 0;
+    padding: 0;
+  }
+  .container-about {
+    padding: 96px 16px;
   }
 
   .about-mini-titles {
@@ -1219,10 +1228,10 @@ input {
     flex-basis: 100%;
   }
   .section-team {
-    padding: 96px 28px;
+    padding: 0;
   }
   .container-team {
-    padding: 0;
+    padding: 96px 28px;
   }
   .team-title {
     font-weight: 700;
@@ -1248,6 +1257,9 @@ input {
   /* section 3 Team */
   /* section 4 portfolio=>*/
   .section-portfolio {
+    padding: 0;
+  }
+  .container-portfolio {
     padding: 96px 16px;
   }
   .portfolio-title {
@@ -1281,10 +1293,14 @@ input {
   /* section 4 portfolio */
   /* footer=> */
   .site-footer {
-    padding: 96px 16px;
+    padding: 0;
   }
   .container-footer {
-    padding: 0;
+    padding: 96px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
   }
   .footer-logo-text {
     padding: 0;
