@@ -54,7 +54,7 @@
             </li>
           </ul>
         </address>
-        <input
+        <!-- <input
           type="checkbox"
           name="burger"
           class="burger visually-hidden"
@@ -64,7 +64,12 @@
             ><svg class="burger-icon" width="24" height="24">
               <use
                 href="./images/icons.svg#icon-heroicons-solid_menu"></use></svg></span
-        ></label>
+        ></label> -->
+        <button type="button" class="burger-btn">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -654,54 +659,56 @@
           <a class="menu-links menu-overlay-links" href="">Contacts</a>
         </li>
       </ul>
-      <address class="contacts menu-overlay-contacts">
-        <ul class="contacts-list menu-overlay-contacts-list">
-          <li class="contacts-list-item menu-overlay-contacts-list-item">
-            <a
-              class="contact-links menu-overlay-contact-links telephone"
-              href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
+      <div class="menu-overlay-contacts-container">
+        <address class="contacts menu-overlay-contacts">
+          <ul class="contacts-list menu-overlay-contacts-list">
+            <li class="contacts-list-item menu-overlay-contacts-list-item">
+              <a
+                class="contact-links menu-overlay-contact-links telephone"
+                href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="contacts-list-item menu-overlay-contacts-list-item">
+              <a
+                class="contact-links menu-overlay-contact-links"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </address>
+        <ul class="social-list menu-overlay-social-list">
+          <li class="social-list-item">
+            <a href="https://instagram.com/" class="social-link">
+              <svg class="social-icon social-icon-team" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
           </li>
-          <li class="contacts-list-item menu-overlay-contacts-list-item">
-            <a
-              class="contact-links menu-overlay-contact-links"
-              href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+          <li class="social-list-item">
+            <a href="https://twitter.com/" class="social-link">
+              <svg class="social-icon social-icon-team" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a href="https://facebook.com/" class="social-link">
+              <svg class="social-icon social-icon-team" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list-item">
+            <a href="https://linkedin.com/" class="social-link">
+              <svg class="social-icon social-icon-team" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
           </li>
         </ul>
-      </address>
-      <ul class="social-list menu-overlay-social-list">
-        <li class="social-list-item">
-          <a href="https://instagram.com/" class="social-link">
-            <svg class="social-icon social-icon-team" width="16" height="16">
-              <use href="./images/icons.svg#icon-instagram-2"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list-item">
-          <a href="https://twitter.com/" class="social-link">
-            <svg class="social-icon social-icon-team" width="16" height="16">
-              <use href="./images/icons.svg#icon-twitter-1"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list-item">
-          <a href="https://facebook.com/" class="social-link">
-            <svg class="social-icon social-icon-team" width="16" height="16">
-              <use href="./images/icons.svg#icon-facebook-1"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list-item">
-          <a href="https://linkedin.com/" class="social-link">
-            <svg class="social-icon social-icon-team" width="16" height="16">
-              <use href="./images/icons.svg#icon-linkedin-1"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+      </div>
     </div>
     <!-- menu-overlay -->
   </body>
